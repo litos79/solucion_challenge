@@ -28,15 +28,9 @@ pipeline {
 
         stage('Sonar Execution') {
             steps {
-                withSonarQubeEnv('sq-1'){
+                
                     sh "npm run sonar"
-                }
-            }
-        }
-
-        stage('Quality Gate Validation') {
-            steps {
-                waitForQualityGate abortPipeline: true
+                
             }
         }
 
