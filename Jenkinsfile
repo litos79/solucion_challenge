@@ -40,11 +40,6 @@ pipeline {
             }
         }
         
-                        stage('Remove template file') {
-            steps {
-                sh "rm/var/www/html/index.nginx-debian.html"
-            }
-        }
         
         stage('Deploy Application') {
             steps {
