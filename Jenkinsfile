@@ -42,7 +42,7 @@ pipeline {
         
         stage('Deploy Application') {
             steps {
-                sh "cp dist/clase6/* /var/www/html"
+                sh "cp dist/solucion_challenge/* /var/www/html"
             }
         }
 
